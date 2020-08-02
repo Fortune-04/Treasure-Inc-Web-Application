@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Treasure Inc.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/Main.css">
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+		<!-- Logo -->
+		<a class="navbar-brand" href="#homeContent"><img src="../Icon/Logo.svg" width="50" height="50"></a>
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a id="navLink" class="nav-link" href="#homeContent">Home</a>
+				</li>
+				<li class="nav-item">
+					<a id="navLink" class="nav-link" href="#ourUsersContent">Our Users</a>
+				</li>
+				<li class="nav-item">
+					<a id="navLink" class="nav-link" href="#gamesContent">Games</a>
+				</li>
+			</ul>
+			<a id="signInBtn" class="nav-link" href="../html/Login.html">Sign In</a>
+		</div>
+
+	</nav>
+
+	<!-- Home Content -->
+	<div id="homeContent" class="container-fluid">
+		<div class="row align-items-center">
+			<div id="hideBg" class="col-sm-6 p-5" align="center">
+				<img class="img-fluid m-5" src="../Icon/BgPic.svg" width="550">
+			</div>
+			<div id="logoTextContainer" class="col-sm-6" align="center">
+				<img class="img-fluid" src="../Icon/Logo Text.svg" width="400">
+				<p id="appDesc">Treasure Inc. is a platform for treasure hunt game organizers to publicize their games to obtain more participation for their games. It also a platform where the treasure hunt game players can register the games in Treasure Inc.</p>
+				<a id="joinUsBtn" class="nav-link" href="../html/SignUp.html">JOIN US</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Our User Content -->
+	<div id="ourUsersContent" class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-sm-6" align="center">
+				<img class="img-fluid" src="../Icon/PlayerAvatarsIcon.svg">
+			</div>
+			<div class="col-sm-6" align="center">
+				<div id="desc" class="card shadow">
+					<h4 class="card-title">TREASURE HUNTERS</h4>
+					<p class="card-text">let enhance your skill as treasure hunter by joining various treasure hunt games provided by us.</p>
+				</div>
+			</div>
+		</div>
+		<div id="rowChange" class="row align-items-center">
+			<div class="col-sm-6" align="center">
+				<div id="desc" class="card shadow">
+					<h4 class="card-title">ORGANIZERS</h4>
+					<p class="card-text">let publicize your treasure hunt games by registering your games into  our website.</p>
+				</div>
+			</div>
+			<div class="col-sm-6" align="center">
+				<img class="img-fluid" src="../Icon/OrganizerAvatarsIcon.svg">
+			</div>
+		</div>
+	</div>
+
+	<!-- Games Content -->
+	<div id="gamesContent" class="container-fluid" align="center">
+		<h3 id="gameTitle">Treasure Hunt Games</h3>
+		<!--Carousel Wrapper-->
+		<div id="multi-item-example" class="carousel slide carousel-multi-item px-3" data-ride="carousel" align="center">
+	  
+			<!--Slides-->
+			<div id="CarouselInner" class="carousel-inner" role="listbox">
+	  
+			</div>
+			<!--/.Slides-->
+
+			<!--Controls-->
+			<div class="controls-top">
+				<a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-circle-left"></i></a>
+				<a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-circle-right"></i></a>
+			</div>
+			<!--/.Controls-->
+
+		</div>
+		<!--/.Carousel Wrapper-->
+
+		<button id="viewGames" type="button" class="btn">View All Games</button>
+	</div>
+
+	<div id="gameListPanel" class="p-2" align="center">
+		<div>
+			<input  type="text" id="searchFilter" onkeyup="searchFilter()" placeholder="Search..">
+		</div>
+		<table id="gameTable" class="table table-hover shadow">
+			<thead>
+			  <tr>
+				<th scope="col"></th>
+				<th scope="col">Picture</th>
+				<th scope="col">Name</th>
+				<th scope="col">Venue</th>
+				<th scope="col">Date</th>
+				<th scope="col">Time</th>
+				<th scope="col">Fee</th>
+				<th scope="col">Team Required</th>
+				<th scope="col">Player per Team</th>
+				<th scope="col">Total Team Joined</th>
+				<th scope="col">Total Player</th>
+			  </tr>
+			</thead>
+			<tbody id="data">
+			  
+			</tbody>
+		</table>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container-fluid" align="center">
+			<p id="openFooter" class="footerContent">Follow Us</p>
+			<a href="#"><img class="socialMediaIcon" src="../Icon/GmailWhite.svg" width="50"></a>
+			<a href="#"><img class="socialMediaIcon" src="../Icon/FacebookWhite.svg" width="50"></a>
+			<a href="#"><img class="socialMediaIcon" src="../Icon/InstagramWhite.svg" width="50"></a>
+			<a href="#"><img class="socialMediaIcon" src="../Icon/TwitterWhite.svg" width="50"></a>
+			<p id="closeFooter" class="footerContent">COPYRIGHT © 2020 TREASURE INC.</p>
+		</div>
+	</footer>
+
+	<script src="../js/Main.js"></script>
+</body>
+</html>

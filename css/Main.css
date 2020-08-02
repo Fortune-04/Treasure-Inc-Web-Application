@@ -1,0 +1,277 @@
+/* General */
+* {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+.btn-general {
+	background-color: #49655C;
+	color: white;
+}
+
+.btn-general:hover {
+	background-color: white;
+	color: #49655C;
+}
+
+.generalColor {
+	color: #49655C;
+}
+
+/*Navigation Bar*/
+nav {
+	background-color: #DEE7E6;
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+#signInBtn {
+	color: #ffffff;
+	padding: 0rem 2rem;
+}
+
+#navLink {
+	color: #49655C;
+	padding: 0rem 2rem;
+}
+
+#navLink:hover {
+	color: white;
+}
+
+#signInBtn {
+	background-color: #49655C;
+	border-radius: 25px;
+	padding: 0.5rem 2.5rem;
+}
+
+#signInBtn:hover {
+	color: #49655C;
+	background-color: #ffffff;
+}
+
+/*Content*/
+#homeContent {
+	background-color: #90D4CC;
+	height: 100%;
+	padding-top: 5rem;
+}
+#ourUsersContent {
+	background-color: #DEE7E6;
+	height: 100%;
+	padding-top: 4.5rem;
+}
+
+#gamesContent {
+	background-color: #90D4CC;
+	height: 100%;
+}
+
+/*HomeContent*/
+#joinUsBtn {
+	font-size: 4vh;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #F0750F;
+	border-radius: 1rem;
+	max-width: 25rem;
+	margin-top: 3rem;
+	border-style: none;
+}
+
+#appDesc {
+	width: 400px;
+	text-align: justify;
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+#joinUsBtn:hover {
+	color: #F0750F;
+	background-color: #ffffff;
+}
+
+/*Our Users Content*/
+#desc {
+	max-width: 35rem;
+	max-height: 14rem;
+	background-color: #F0750F;
+	color: #ffffff;
+	padding: 2rem 1.5rem;
+	border-style: none;
+	font-size: 2.25vh;
+}
+
+.card-title {
+	padding-bottom: 0.75rem;
+	font-weight: bold;
+}
+
+/*GamesContent*/
+#gameTitle {
+	font-size: 40px;
+	color: white;
+	padding-top: 7rem;
+	padding-bottom: 2rem;
+	font-weight: bold;
+	text-shadow: 2px 2px #8a795d;
+}
+
+.gameImage {
+	height: 220px;
+}
+
+.gameCard {
+	border: none;
+	transition: box-shadow .5s;
+}
+
+.gameCard:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa-chevron-circle-left, .fa-chevron-circle-right{
+	color: #49655C;
+}
+
+#viewGames {
+	background-color: #49655C;
+	color: #ffffff;
+	padding: 10px;
+	margin: 20px;
+	width: 200px;
+	font-weight: bold;
+}
+
+#viewGames:hover {
+	color: #49655C;
+	background-color: #ffffff;
+}
+
+#gameListPanel{
+	display: none;
+	background-color: #90D4CC;
+}
+
+#searchFilter {
+	background-color: white; 
+	background-image: url("../Icon/searchIcon.png");
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 20px 12px;
+	width: 95%;
+	font-size: 16px; /* Increase font-size */
+	padding: 12px 20px 12px 60px; /* Add some padding */
+	border: none;
+	margin-bottom: 2rem; /* Add some space below the input */
+	border-radius: 15px;
+	color: #49655C;
+  }
+
+.table {
+	padding-right: 50px;
+	margin-bottom: 2rem;
+	text-align: center;
+	font-size: 16px;
+	background-color: white;
+	color: #49655C;
+	width: 95%;
+  }
+  
+th {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	background-color: #49655C;
+	border:none !important;
+}
+
+.circleBG {
+	background-color: #F0750F;
+	color: white;
+	padding: 15px;
+	margin: 0px 30px;
+	border-radius: 50%;
+  }
+
+  .inputGameData {
+	border: none;
+	background-color: #F2F2F2;
+  }
+  
+  .inputGameData:focus {
+	border: none;
+	background-color: #F2F2F2;
+  }
+  
+/*Footer*/
+footer {
+	background-color: #49655C;
+	padding: 1rem;
+}
+
+.footerContent {
+	color: white;
+}
+
+#openFooter {
+	font-size: 1.75vh;
+	font-weight: bold;
+}
+
+#closeFooter {
+	font-size: 1.5vh;
+	padding-top: 1rem;
+}
+
+.fa {
+  padding: 0.75rem;
+  font-size: 2vw;
+  max-width: 3.5rem;
+  text-decoration: none;
+  margin: 0rem 0.25rem;
+  border-radius: 50%;
+  transition: transform .2s;
+}
+
+.fa:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    color: white;
+}
+
+.socialMediaIcon {
+	transition: transform .2s;
+}
+  
+.socialMediaIcon:hover {
+	transform: scale(1.1);
+}
+
+/* Phone */
+@media only screen and (max-width : 576px) {
+
+	/* Navigation Bar */
+	nav {
+		font-size: 1rem;
+	}
+
+	/* Home */
+	#hideBg {
+		display: none;
+	}
+
+	#logoTextContainer {
+		padding-top: 5rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	/* Our Users */
+	#rowChange {
+		flex-direction: column-reverse;
+	}
+}

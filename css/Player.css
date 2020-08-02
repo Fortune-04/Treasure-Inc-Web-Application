@@ -1,0 +1,325 @@
+/*General*/
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+.generalColor {
+  color: #49655C;
+}
+
+/*Navigation Bar*/
+nav {
+	background-color: #DEE7E6;
+}
+
+#greeting {
+	padding-top: 20px;
+	padding-right: 20px;
+	font-family: "Gill Sans MT";
+	font-weight: bold;
+	color: #49655C;
+}
+
+.dropdown-toggle::after { 
+    content: none; 
+}
+
+.btn {
+  background-color: #49655C;
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #49655C;
+}
+
+.iconAv {
+  transition: transform .2s;
+}
+
+.iconAv:hover {
+  transform: scale(1.1);
+}
+
+hr.lineMessage {
+  width: 420px;
+  color: #F2F2F2;
+}
+
+#MessageTittle {
+  font-style: bold;
+  color: #49655C;
+  font-size: 14px;
+  padding: none;
+}
+
+#MessageContent {
+  font-style: normal;
+  font-size: 12px;
+  padding: none;
+}
+
+#time {
+  font-size: 15px;
+  font-style: bold;
+  color: #49655C;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: right;
+}
+
+/* Content */
+#PlayerContent {
+	min-height: 90%;
+  background-color: #F2F2F2;
+}
+
+.contentTitle, .backNav {
+  padding-top: 7rem;
+  padding-left: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.backNav {
+  text-decoration: none;
+  color: #49655C;
+  font-weight: bold;
+}
+
+.backNav:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  margin: 0rem 2.5rem;
+  border: none;
+}
+
+.form-group {
+  margin: 1.5rem;
+}
+
+.inputGameData {
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.inputGameData:focus {
+  border: none;
+  background-color: #F2F2F2;
+}
+
+/* Footer */
+footer {
+	background-color: #49655C;
+	height: 10%;
+	color: white;
+	display: flex;
+  align-items: center;
+}
+
+#leftFooter {
+  font-size: 0.75vw;
+  color: white;
+  margin-left: 0px !important;
+}
+
+#socialMedia {
+  font-weight: bold;
+  color: white;
+  margin-right: 0px !important;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-decoration: none;
+  margin: 0px 3px;
+  border-radius: 50%;
+  transition: transform .2s;
+}
+
+.fa:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    color: white;
+}
+
+/*Player*/
+
+.eventDateContainer {
+  background-color: #F0750F;
+  color: white;
+  display: flex;
+}
+
+section{ 
+  margin: auto; /* Important */ 
+  text-align: center; 
+}
+
+.day {
+  font-size: 5rem;
+}
+
+.month {
+  font-size: 2rem;
+}
+
+.circleBG {
+  background-color: #F0750F;
+  color: white;
+  padding: 15px;
+  margin: 0px 30px;
+  border-radius: 50%;
+}
+
+#searchFilter {
+  background-color: white; 
+  background-image: url("../Icon/searchIcon.png");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 20px 12px;
+  width: 90%;
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 60px; /* Add some padding */
+  border: none;
+  border-radius: 15px;
+  color: #49655C;
+}
+
+.cardPic {
+  position: relative;
+  height: 175px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #49655C;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cardPic:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cardRow {
+  width: 95%;
+}
+
+.imgCard {
+  width:100%;
+  height:100%;
+}
+
+.gameCard {
+  transition: transform .2s;
+}
+
+.gameCard:hover {
+  transform: scale(1.1);
+}
+
+.ticketImgH {
+  height: 250px;
+}
+
+.btnTicket {
+ width: 10rem;
+}
+
+.table {
+  padding-right: 50px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 16px;
+  background-color: white;
+  color: #49655C;
+  width: 90%;
+}
+
+th {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #49655C;
+}
+
+/*Player - Game Detail*/
+
+.teamPlayer{
+  background-color: #F0750F;
+  padding: 20px;
+  border: none;
+  border-radius: 75%;
+  color: white;
+}
+
+.centerItem {
+  height: 200px;
+}
+
+.card-header {
+  background-color: #49655C;
+  color: white;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+/*Player - Profle*/
+
+.profileCard {
+  min-height: 27rem;
+}
+
+.socialMediaIcon {
+  transition: transform .2s;
+}
+
+.socialMediaIcon:hover {
+  transform: scale(1.1);
+}
+
+.gamesCard {
+  background-color: #DEE7E6;
+  width: 12rem;
+  border: none;
+  transition: box-shadow .5s;
+}
+
+.gamesCard:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa-chevron-circle-left, .fa-chevron-circle-right{
+	color: #49655C;
+}

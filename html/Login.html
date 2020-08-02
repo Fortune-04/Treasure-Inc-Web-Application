@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treasure Inc.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/LoginSignUp.css">
+</head>
+<body>
+	<div id="LoginContent" class="container-fluid d-flex" align="center">
+		<div id="cardLogin" class="card shadow m-auto">
+			<div class="card-body">
+				<div align="left"><a href="../html/Main.html"><img src="../Icon/Back.svg" width="20" class="backIcon"></a></div>
+				<h1>LOGIN</h1>
+				<img src="../Icon/Avatar Icon.svg" width="150" class="m-4">
+				<form method="GET" action="../php/LoginSignUp.php">
+					<div class="form-group m-4">
+						<input type="email" class="form-control form-control-login" id="Email" name="Email" placeholder="Email" required>
+					</div>
+					<div class="form-group m-4">
+						<input type="password" class="form-control form-control-login" id="Password" name="Password" placeholder="Password" required>
+					</div>
+					<button type="submit" class="btn m-2">LOGIN</button>
+				</form>
+				<div id="smallLink">
+					Don't have an account? <a href="../html/SignUp.html">Sign Up</a><br>
+					<a href="#" data-target="#forgotPasswordModal" data-toggle="modal">Forgot your password?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body" align="center">
+					<div>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<h2 class="modal-title p-4">FORGOT PASSWORD</h2>
+					<form id="ForgotPasswordForm">
+						<div class="form-group">
+							<input type="email" class="form-control fcEmail" id="email" name="email" placeholder="Email" required>
+						</div>
+						<button type="submit" class="btn m-3">SUBMIT</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/Login.js"></script>
+</body>
+</html>
